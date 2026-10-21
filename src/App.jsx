@@ -7,7 +7,7 @@ const CONFIG = {
   groom: "Talha Imran Jhagra",
   brideInitial: "M", // only the initial is shown (on the opening screen)
   hosts: "Muhammad Miskeen Tanoli", // bride's father (the one inviting)
-  groomParents: "Son of Mr. & Mrs. Muhammad Imran",
+  groomParents: "Son of Muhammad Imran",
   brideFamily: "Daughter of Muhammad Miskeen Tanoli",
 
   dateTime: "2026-11-08T18:00:00+05:00", // start: 8 Nov 2026, 6:00 PM (Pakistan time)
@@ -28,9 +28,10 @@ const CONFIG = {
   // Set to "" to use the drawn bride & groom illustration instead.
   photo: "couple.jpg",
   photoShape: "print", // "print" = normal photo, softly blended into the card | "cutout" = transparent PNG (person only)
-  // icon: carriage | lunch | rukhsati
+  // icon: carriage | nikkah | lunch | rukhsati
   schedule: [
     { icon: "carriage", label: "Arrival of Baraat", time: "06:00 PM" },
+    { icon: "nikkah", label: "Nikkah", time: "07:00 PM" },
     { icon: "lunch", label: "Dinner", time: "09:00 PM" },
     { icon: "rukhsati", label: "Rukhsati", time: "10:00 PM" },
   ],
@@ -282,6 +283,13 @@ const ICONS = {
       <path d="M8 26h16" />
     </g>
   ),
+  nikkah: (
+    <g>
+      <circle cx="12" cy="18" r="6" />
+      <circle cx="20" cy="18" r="6" />
+      <path d="M16 6l-2.5 3.5h5z" />
+    </g>
+  ),
   rukhsati: (
     <g>
       <path d="M16 27C6 20 5 12 10 10.5c3-.8 5 1.2 6 3.5 1-2.3 3-4.3 6-3.5 5 1.5 4 9.5-6 16.5Z" />
@@ -434,6 +442,7 @@ function Invitation({ guest, onBack }) {
             <div className="names">
               <span className="wp">{GROOM_FULL}</span>
             </div>
+            <p className="small groom-son">{CONFIG.groomParents}</p>
           </Reveal>
           <Reveal delay={300}>
             <p className="date">{FULL_DATE}</p>

@@ -131,7 +131,7 @@ body {
 .names em { font-family: var(--script); font-style: normal; font-size: 1.2rem; color: var(--muted); line-height: 1; }
 .date { margin-top: 10px; font-family: var(--display); font-weight: 600; font-size: clamp(.95rem, 4.4vw, 1.2rem); color: #1f181a; }
 
-.sched { margin-top: 20px; width: 100%; max-width: 320px; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
+.sched { margin-top: 20px; width: 100%; max-width: 360px; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; }
 .sched-item { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 2px 4px; border-left: 1px solid rgba(43, 35, 37, .35); }
 .sched-item:first-child { border-left: 0; }
 .ico { width: 30px; height: 30px; color: #3a2a2d; }
@@ -334,3 +334,4 @@ body {
   background: var(--maroon); color: #f6ece4; text-decoration: none;
 }
 .cbtn:active { transform: scale(.94); }
+.groom-son { margin-top: 6px; }
