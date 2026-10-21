@@ -22,7 +22,7 @@ const CONFIG = {
   // RSVP: Bride's family
   rsvpName: "M. Miskeen Tanoli",
   phones: ["+92 321 9842192", "+92 314 5014146"],
-  whatsappText: "Assalam o Alaikum, I received the Baraat invitation of Talha. ",
+  whatsappText: "Assalam o Alaikum, I received the Baraat invitation and I have a few queries regarding the event. Could you please help me? ",
 
   // Your own photo: put the file in the `public` folder and write its name here.
   // Set to "" to use the drawn bride & groom illustration instead.
